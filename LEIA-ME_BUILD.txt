@@ -1,0 +1,35 @@
+============================================
+   NanoBin - Instruções de Build
+============================================
+
+REQUISITOS:
+  - .NET 8 SDK (https://dotnet.microsoft.com/download/dotnet/8.0)
+  - Inno Setup 6 (https://jrsoftware.org/isinfo.php) para gerar o instalador
+
+ARQUIVOS NECESSÁRIOS NA PASTA DO PROJETO:
+  - Program.cs
+  - TrayApp.cs
+  - NanoBin.csproj
+  - NanoBin_Installer.iss
+  - build_all.bat
+  - icon.ico (ícone do app)
+  - icon_dark.ico (ícone tema escuro)
+  - icon_light.ico (ícone tema claro)
+  - qrcode_donation.png (QR code de doação)
+
+COMO COMPILAR:
+  1. Coloque todos os arquivos na mesma pasta
+  2. Execute build_all.bat como Administrador
+  3. Os arquivos gerados estarão em:
+     - output\portable\NanoBin.exe   → Versão portátil
+     - output\NanoBin_v2.0_Setup.exe → Instalador
+
+CHANGELOG v2.0:
+  - Tema automático que segue o sistema (com opção manual)
+  - Ícones invertidos para contraste correto na bandeja
+  - QR code de doação na tela "Sobre"
+  - Tooltip dinâmico (Há/Não há arquivos na Lixeira)
+  - Instalador sem checkboxes visíveis na tela final
+  - Removidos ícones "full" não utilizados
+  - Copyright atualizado para 2026
+  - Código otimizado e limpo
